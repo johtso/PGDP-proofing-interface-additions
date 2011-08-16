@@ -1,0 +1,29 @@
+{
+  // Required
+  "name": "PGDP interface tweaks",
+  "version": "0.1",
+
+  // Recommended
+  "description": "Some tweaks to the PGDP proofing interface.",
+
+  // Add any of these that you need
+  //"options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.pgdp.net/c/tools/proofers/text_frame_std.php*"
+      ],
+
+      "js": [
+        "/libs/jquery-1.6.2.min.js",
+        "/libs/jquery.hotkeys.js",
+        "/libs/jquery.piemenu.js",
+        "/libs/textinputs_jquery_src.js",
+        "/libs/to-title-case.js",
+        "main.js"
+      ],
+
+      "all_frames": true
+    }
+  ]
+}
